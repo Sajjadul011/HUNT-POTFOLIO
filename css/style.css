@@ -29,6 +29,7 @@ ul {
     background: url(../images/banner.png) center center no-repeat;
     height: 700px;
     background-size: cover;
+    /* background-attachment: fixed; */
     position: relative;
     z-index: 1;
     -webkit-clip-path: polygon(0% 0%, 0 80%, 100% 69%, 100% 0%);
