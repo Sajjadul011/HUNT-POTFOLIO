@@ -353,7 +353,8 @@ header .container nav ul li a:hover::after {
 #pricepenal .container .mainbox:hover .planename,
 #pricepenal .container .mainbox:hover .price,
 #pricepenal .container .mainbox:hover .join{
-    background-color: #fec600;
+    background-color: pink;
+    /* background-color: #fec600; */
 }
 #pricepenal .container .mainbox:hover  .price  h5,
 #pricepenal .container .mainbox:hover  .price  p,
