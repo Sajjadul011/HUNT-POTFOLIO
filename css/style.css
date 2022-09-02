@@ -360,13 +360,13 @@ header .container nav ul li a:hover::after {
     color: black;
 }
 #pricepenal .container .mainbox:hover .planename {
-    background-color: #fec600;
+    /* background-color: #fec600; */
+    background-color: blue;
     color: #111111;
 }
 #pricepenal .container .mainbox:hover >.price{
     background-color: #fec600;
-    color: #111111 !important;
-    font-size: 50px;
+   
 }
 #pricepenal .container .mainbox:hover  .price  h5,
 #pricepenal .container .mainbox:hover  .price  p,
