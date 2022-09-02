@@ -284,7 +284,7 @@ header .container nav ul li a:hover::after {
     font-size: 20px;
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     padding-top: 30px;
 }
@@ -335,48 +335,32 @@ header .container nav ul li a:hover::after {
     clip-path: polygon(100% 100%, 100% 0%, 0 60%, 0 100%);
     transition: all .2s linear;
 }
-/* #pricepenal .container .mainbox .join h5 {
-    font-size: 16px;
-    padding-top: 45px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 500;
-    text-align: center;
-} */
 #pricepenal .container .mainbox .join a {
     font-size: 16px;
-    /* padding-top: 45px; */
     position: relative;
     top: 62%;
     left: 37%;
     transform: translate(-50%,-50%);
     text-transform: uppercase;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
 }
 #pricepenal .container .mainbox:hover {
     box-shadow: 1px 1px 10px 1px black;
     color: black;
 }
-#pricepenal .container .mainbox:hover .planename {
-    /* background-color: #fec600; */
-    background-color: blue;
-    color: #111111;
-}
-#pricepenal .container .mainbox:hover >.price{
+#pricepenal .container .mainbox:hover .planename,
+#pricepenal .container .mainbox:hover .price,
+#pricepenal .container .mainbox:hover .join{
     background-color: #fec600;
-   
 }
 #pricepenal .container .mainbox:hover  .price  h5,
 #pricepenal .container .mainbox:hover  .price  p,
 #pricepenal .container .mainbox:hover  .join a,
 #pricepenal .container .mainbox:hover .planename h4{
     color: #111111;
-    font-weight: bold;
+    font-weight: 600;
 }
-#pricepenal .container .mainbox:hover .join{
-    background-color: #fec600;
-    color: #111111;
-}
+
 /* Price end */
