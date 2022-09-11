@@ -21,7 +21,31 @@ ul {
     max-width: 1170px;
     margin: 0 auto;
 }
+.section-title {
+    text-align: center;
+}
 
+.section-title .main-title {
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+.section-title .para {
+    max-width: 570px;
+    margin-inline: auto;
+    line-height: 1.7rem;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
 /* end: common css */
 
 /* hero start */
@@ -176,23 +200,154 @@ header .container nav ul li a:hover::after {
 /* end banner data */
 
 /* -------about us starts here-------- */
-.section-title {
-    text-align: center;
+#aboutUs .container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.section-title .main-title {
-    font-size: 35px;
-    font-weight: 400;
-    text-transform: capitalize;
-    margin-bottom: 1.5rem;
+#aboutUs .container .section-title {
+    margin-bottom: 60px;
 }
-
-.section-title .para {
-    max-width: 570px;
-    margin-inline: auto;
-    line-height: 1.7rem;
+#aboutUs .container .row .absimg {
+    padding: 25px;
+    margin: 30px;
+    border: 1px black solid;
+    border-radius: 50%;
+}
+#aboutUs .container .row .box {
+    width: 375px;
+    background-color: #ededed;
+    padding: 40px 35px;
+    position: relative;
+}
+#aboutUs .container .row .box::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 15px solid #ededed;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+#aboutUs .container .row .box-2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -87px;
+    left: auto;
+    transform: translateY(-50%) rotate(-90deg);
+}
+#aboutUs .container .row .box-3::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: -15px;
+    bottom: 43%;
+    transform: translateX(-50%);
+    border-top: 15px solid transparent;
+    border-right: 15px solid #ededed;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+#aboutUs .container .row .box-4::after {
+    content: '';
+    top: -13%;
+    left: 50%;
+    bottom: auto;
+    transform: translateX(-50%) rotate(-180deg);
+}
+#aboutUs .container .row .box::before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #353535;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+#aboutUs .container .row .box-2::before {
+    content: '';
+    top: 50%;
+    bottom: auto;
+    left: auto;
+    right: -40px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #353535;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+#aboutUs .container .row .box-3::before {
+    content: '';
+    top: 50%;
+    bottom: auto;
+    left: -40px;
+    right: auto;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #353535;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+#aboutUs .container .row .box-4::before {
+    content: '';
+    top: 50%;
+    top: -40px;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #353535;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+#aboutUs .container .row .box:hover::before {
+    background-color: #fec600;
+}
+#aboutUs .container .row .absimg .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#aboutUs .container .row .absimg .img {
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+#aboutUs .container .row .absimg .img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 50%;
+    opacity: .3;
+}
+#aboutUs .container .row .box h5 {
+    color: #111111;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#aboutUs .container .row .box p {
     font-size: 14px;
+    line-height: 24px;
+    color: #353535;
     font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
 }
 /* -------about us end-------- */
 
@@ -288,15 +443,25 @@ header .container nav ul li a:hover::after {
     text-align: center;
     padding-top: 30px;
 }
-#pricepenal .container .mainbox .price {
+#pricepenal .container .mainbox .price-bg {
     position: absolute;
     height: 100px;
     width: 100px;
-    background-color: #353535;
-    border: 3px solid white;
+    background-color: #fffefe;
+    border: 2px solid #353535;
     border-radius: 50%;
     top: 18%;
     left: 36%;
+    transition: all .2s linear;
+}
+#pricepenal .container .mainbox .price-bg .price {
+    height: 90px;
+    width: 90px;
+    margin: 3px auto;
+    background-color: #353535;
+    border-radius: 50%;
+    top: 5%;
+    left: 5%;
     transition: all .2s linear;
 }
 #pricepenal .container .mainbox .price h5 {
@@ -350,9 +515,12 @@ header .container nav ul li a:hover::after {
     box-shadow: 1px 1px 10px 1px black;
     color: black;
 }
+#pricepenal .container .mainbox:hover .price-bg {
+    border: 2px solid #fec600;
+}
 #pricepenal .container .mainbox:hover .planename,
 #pricepenal .container .mainbox:hover .price,
-#pricepenal .container .mainbox:hover .join{
+#pricepenal .container .mainbox:hover .join {
     background-color: #fec600;
 }
 #pricepenal .container .mainbox:hover  .price  h5,
@@ -365,7 +533,7 @@ header .container nav ul li a:hover::after {
 
 /* Price end */
 
-/* live status */
+/* live status start*/
 #live-status {
     background: url(../images/banner_portfolio.png) center center no-repeat;
     background-size: cover;
@@ -374,6 +542,7 @@ header .container nav ul li a:hover::after {
     background-attachment: fixed;
     clip-path: polygon(0% 25%, 100% 0%, 100% 60%, 0% 86%);
     height: 280px;
+    margin-top: 10px;
 }
 #live-status::after {
     content: '';
@@ -390,8 +559,8 @@ header .container nav ul li a:hover::after {
     display: flex;
     justify-content: center;
     gap: 30px;
-    transform: rotate(-2.8deg);
-    padding-top: 55px;
+    transform: rotate(-3deg);
+    padding-top: 53px;
 }
 #live-status .live_feed .status {
     width: 210px;
@@ -406,12 +575,21 @@ header .container nav ul li a:hover::after {
     text-align: center;
     max-width: 150px;
     margin: 20px auto;
-    transform: rotate(2.8deg);
+    transform: rotate(3deg);
 }
 #live-status .live_feed .status p {
     font-size: 20px;
     color: #ffffff;
     font-weight: 500;
     text-align: center;
-    transform: rotate(2.8deg);
+    transform: rotate(3deg);
 }
+/* live status end*/
+
+/* our team start*/
+#our-team .team-mem {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+/* our team end */
