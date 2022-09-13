@@ -587,9 +587,237 @@ header .container nav ul li a:hover::after {
 /* live status end*/
 
 /* our team start*/
+#our-team {
+    height: 560px;
+}
 #our-team .team-mem {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
+#our-team .container .section-title {
+    padding-bottom: 60px;
+}
+#our-team .team-mem .member {
+    height: 350px;
+    width: 270px;
+    gap: 30px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    border: 1px solid #dddddd;
+    transition: all .2s linear;
+}
+#our-team .team-mem .member:hover {
+    height: 400px;
+}
+#our-team .team-mem .member .slider .fa-search-plus {
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #353535;
+    font-size: 18px;
+    margin-top: 120px;
+}
+#our-team .team-mem .member .slider {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(254, 199, 0, 0.50);
+    transition: all .3s linear;
+}
+#our-team .team-mem .member:hover .slider {
+    left: 0;
+}
+#our-team .team-mem .member .mem-det {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    clip-path: polygon(0 14%, 0% 100%, 100% 100%, 100% 0);
+    transition: all .2s linear;
+}
+#our-team .team-mem .member:hover .mem-det {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 170px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    clip-path: polygon(0 10%, 0% 100%, 100% 100%, 100% 0);
+}
+#our-team .team-mem .member .mem-det h5 {
+    font-size: 20px;
+    color: #111111;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+#our-team .team-mem .member .mem-det p {
+    font-size: 16px;
+    color: #222222;
+}
+#our-team .team-mem .member:hover .icon {
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+}
+#our-team .team-mem .member .icon li a i {
+    color: black;
+    font-size: 18px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 8px;
+    transition: all .2s ease-in-out;
+}
+#our-team .team-mem .member .icon li a i:hover {
+    background-color: #fec600;
+    border: 1px solid transparent;
+}
 /* our team end */
+
+/* Our Partner start */
+#our-partners {
+    height: 280px;
+    background-color: #f1f1f1;
+    clip-path: polygon(0% 35%, 100% 10%, 100% 65%, 0% 100%);
+}
+#our-partners .container .all-partner {
+    display: flex;
+    padding-top: 85px;
+    justify-content: center;
+    gap: 25px;
+    transform: rotate(-3deg);
+}
+#our-partners .container .all-partner a .partner-company {
+    height: 105px;
+    width: 230px;
+    background-color: #f1f1f1;
+    border: 1px solid #cccccc;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+#our-partners .container .all-partner a .partner-company:hover {
+    border: 1px solid #fec600;
+}
+#our-partners .container .all-partner a .partner-company img {
+    transform: rotate(3deg);
+    margin: 33px 30px 25px 25px;
+}
+/* Our Partner end */
+
+/* footer start */
+#footer {
+    margin-top: -100px;
+    background-color: #222222;
+    clip-path: polygon(0% 13%, 100% 0%, 100% 100%, 0% 100%);
+}
+#footer .container .logo {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#footer .container .contect-info {
+    display: flex;
+}
+#footer .container .contect-info .contect {
+    width: 300px;
+    text-align: center;
+}
+#footer .container .contect-info .con-1 {
+    border-right: 1px solid #555555;
+}
+#footer .container .contect-info .con-2 {
+    border-right: 1px solid #555555;
+}
+#footer .container .contect-info .con-3 {
+    border-right: 1px solid #555555;
+}
+#footer .container .contect-info .contect i {
+    background-color: #fec600;
+    height: 30px;
+    width: 30px;
+    color: #000000;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+#footer .container .contect-info .contect p {
+    margin: 0 auto;
+    width: 240px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+#footer .container .contect-info .con-3 p {
+    width: 250px;
+}
+#footer .container .follow {
+    margin-top: 60px;
+    text-align: center;
+}
+#footer .container .follow h4 {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+}
+#footer .container .follow .f-icon {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+#footer .container .follow .f-icon i {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #353535;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding-top: 8px;
+    transition: all .2s linear;
+}
+#footer .container .follow .f-icon i:hover {
+    background-color: #fec600;
+}
+/* footer end */
+
+/* copy right holder start */
+#copyright {
+    background-color: #353535;
+}
+#copyright .container {
+    display: flex;
+    justify-content: center;
+}
+#copyright .container h4 {
+    padding: 20px 3px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #f1f1f1;
+    font-weight: 400;
+}
+#copyright .container :nth-child(2) {
+    color: #fec600;
+}
+/* copy right holder end */
