@@ -416,6 +416,275 @@ header .container nav ul li a:hover::after {
 }
 /* our potfolio end*/
 
+/* Our services start */
+#our-services .container .all-row {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    z-index: 1;
+    padding: 70px 0;
+}
+#our-services .container .all-row::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-right: 1px dashed #000000;
+    height: 100%;
+    z-index: -1;
+}
+#our-services .container .all-row .up-button,
+#our-services .container .all-row .down-button {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    transition: all .2s linear;
+}
+#our-services .container .all-row .down-button {
+    top: auto;
+    bottom: 0;
+    padding-top: 5px;
+}
+#our-services .container .all-row .up-button:hover,
+#our-services .container .all-row .down-button:hover {
+    background-color: #fec600;
+    border-color: transparent;
+}
+#our-services .container .all-row .row {
+    display: flex;
+    gap: 80px;
+    justify-content: flex-end;
+    align-items: center;
+}
+#our-services .container .all-row .row:nth-child(even) {
+    justify-content: flex-start;
+}
+#our-services .container .all-row .row h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 600;
+}
+#our-services .container .all-row .row .icon {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #ededed;
+    padding: 16px
+}
+#our-services .container .all-row .row:hover .icon {
+    background-color: #fec600;
+    transition: all .3s ease-in-out;
+}
+#our-services .container .all-row .row .icon img {
+    height: 100%;
+}
+#our-services .container .all-row .row .service-info {
+    width: 470px;
+    padding: 55px 30px;
+    background-color: #ededed;
+    position: relative;
+}
+#our-services .container .all-row .row .service-info::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    border-top: 15px solid transparent;
+    border-right: 15px solid #ededed;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+#our-services .container .all-row .row .service-info:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: -30px;
+    transform: translateY(-50%);
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #ededed;
+}
+/* Our services end */
+
+/* our services part 2 start */
+#os-pt {
+    background: url(../images/os-banner.png) center center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    background-attachment: fixed;
+    padding-top: 150px;
+    height: 1000px;
+    clip-path: polygon(0 7%, 100% 0, 100% 94%, 0 100%);
+}
+#os-pt::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    z-index: -1;
+}
+#os-pt .container .all-row {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    padding: 70px 0;
+}
+#os-pt .container .all-row .row {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+#os-pt .container .all-row::after {
+    content: '';
+    position: absolute;
+    left: 4.5%;
+    top: 0;
+    border-right: 1px dashed #ffffff;
+    height: 100%;
+    z-index: 1;
+}
+#os-pt .container .all-row .row .mem {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #cbcbcb;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+#os-pt .container .all-row .row .mem::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+#os-pt .container .all-row :nth-of-type(2).row .mem::after {
+    content: '';
+    background-color: transparent;
+}
+#os-pt .container .all-row .row .mem img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: -1;
+}
+#os-pt .container .all-row :nth-of-type(2).row .mem {
+    background-color: #fec600;
+}
+#os-pt .container .all-row :nth-of-type(2).row .mem img {
+    right: auto;
+    left: -8px;
+}
+#os-pt .container .all-row .row .review {
+    background-color: #f1f1f1;
+    padding: 50px 30px;
+    position: relative;
+}
+#os-pt .container .all-row .row .review::after {
+    content: '';
+    position: absolute;
+    right: auto;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    border-top: 20px solid transparent;
+    border-right: 20px solid #f1f1f1;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+#os-pt .container .all-row .row .review h4 {
+    font-size: 20px;
+    color: #222222;
+    font-weight: 500;
+}
+#os-pt .container .all-row .row .review i {
+    font-size: 16px;
+    color: #fec600;
+}
+#os-pt .container .all-row .row .review h5 {
+    font-size: 16px;
+    color: #353535;
+}
+#os-pt .container .all-row .row .review p {
+    width: 770px;
+    height: 90px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #353535;
+    font-weight: 400;
+    font-family: "Open Sans";
+    padding-top: 30px;
+}
+#os-pt .container .all-row .row .review h6 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #353535;
+    font-family: 'The Nautigal', cursive;
+    text-align: right;
+    padding-top: 30px;
+}
+#os-pt .container .all-row .up-button,
+#os-pt .container .all-row .down-button {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    left: 2.9%;
+    top: -30px;
+    transform: translateX(-2.9%);
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    transition: all .2s linear;
+    z-index: 5;
+}
+#os-pt .container .all-row .down-button {
+    top: auto;
+    bottom: -30px;
+    padding-top: 5px;
+}
+#os-pt .container .all-row .up-button:hover,
+#os-pt .container .all-row .down-button:hover {
+    background-color: #fec600;
+    border-color: transparent;
+}
+/* our services part 2 end */
+
 /* Price start */
 #pricepenal .container .allprice {
     display: flex;
