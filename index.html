@@ -13,9 +13,13 @@
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&family=The+Nautigal:wght@400;700&display=swap"
+        rel="stylesheet">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <body>
@@ -62,7 +66,7 @@
                 </div>
                 <div class="banner-button">
                     <ul>
-                        <li><a href="#" class="btn">View More</a></li>
+                        <li><a href="#" class="btn btn1">View More</a></li>
                         <li><a href="#" class="btn">Hire Us</a></li>
                     </ul>
                 </div>
@@ -214,11 +218,11 @@
                         <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star-half" aria-hidden="true"></i>
                         <h5>Chairman/CEO</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's ardy text ever since the 1500s, 
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's ardy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type ook.
-                             It has survived not only five centuries, 
-                            but also the leap into electronic typesetting, remaining essentially changed. 
+                            It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially changed.
                             orem Ipsum is simply dummy text of the printing.</p>
                         <h6>Mahadi Tahsan</h6>
                     </div>
@@ -538,6 +542,24 @@
         </div>
     </section>
     <!-- copy right holder end-->
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '100px',
+            duration: 1000,
+            delay: 500
+        });
+        ScrollReveal().reveal('.banner-data h4', { delay: 450 });
+        ScrollReveal().reveal('.banner-data h2', { delay: 450, origin: 'left' });
+        ScrollReveal().reveal('.banner-data p', { delay: 450, origin: 'bottom' });
+        ScrollReveal().reveal('.banner-button', { delay: 450});
+
+        ScrollReveal().reveal('.section-title .main-title', { delay: 450, origin: 'right' });
+        ScrollReveal().reveal('.section-title .para', { delay: 450, origin: 'left' });
+
+    </script>
+
 </body>
 
 </html>
